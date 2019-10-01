@@ -12,23 +12,23 @@ namespace Savings
             int savingyears = 0;
             int numyears = 1;
             int nummonths = 1;
-            
-    
+
+
 
             Console.WriteLine("How much money would you like to save in a week?");
             weeklysavings = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("What interest rate do you get per month? e.g. 4.5");
-            interest = Convert.ToDouble(Console.ReadLine())/100;
+            interest = Convert.ToDouble(Console.ReadLine()) / 100;
 
             Console.WriteLine("How many years would you like to save for?");
             savingyears = Convert.ToInt32(Console.ReadLine());
 
-            for (int month = 1; month <= savingyears*12; month++)
+            for (int month = 1; month <= savingyears * 12; month++)
             {
                 totalAmt += weeklysavings * 4;
                 totalAmt += weeklysavings * interest;
-                            
+
                 string monthname = month.ToString("N0");
 
                 if (month == 1)
@@ -46,7 +46,7 @@ namespace Savings
                 else if (month == 4)
                 {
                     monthname = "April";
-                                    }
+                }
                 else if (month == 5)
                 {
                     monthname = "May";
@@ -80,7 +80,9 @@ namespace Savings
                     monthname = "December";
                 }
 
+
                 Console.WriteLine($"{monthname} @ year {numyears.ToString("N0")} : {totalAmt.ToString("C2")}");
+
 
                 nummonths++;
 
@@ -90,12 +92,13 @@ namespace Savings
                     nummonths = 1;
                 }
 
-
             }
-            Console.ReadKey();
-            
 
+
+            Console.ReadKey();
 
         }
+
+        
     }
 }

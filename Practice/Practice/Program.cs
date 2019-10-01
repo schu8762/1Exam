@@ -7,19 +7,18 @@ namespace DaysIntheMonth
         static void Main(string[] args)
         {
             int monthdays = 0;
+
             Console.WriteLine("What month are we in?");
-            string monthname = Console.ReadLine();
-            //monthname = monthname.ToLower();
+            string monthname = Console.ReadLine().ToLower();
 
-
-            if (monthname == "January" || monthname == "March" || monthname == "May" || monthname == "July" || monthname == "August" || monthname == "October" || monthname == "December")
+            if (monthname == "january" || monthname == "march" || monthname == "may" || monthname == "july" || monthname == "august" || monthname == "october" || monthname == "december")
             {
                 monthdays = 31;
             }
-            else if (monthname == "February")
+            else if (monthname == "february")
             {
-                Console.WriteLine("Is it a leap year? y/n");
-                string leap = Console.ReadLine();
+                Console.WriteLine("Is it a leap year? yes/no");
+                string leap = Console.ReadLine().ToLower();
 
                 if (leap == "yes")
                 {
@@ -29,13 +28,17 @@ namespace DaysIntheMonth
                 {
                     monthdays = 28;
                 }
-            else if (monthname == "April" || monthname == "June" || monthname == "September" || monthname == "November")
-                {
-                    monthdays = 30;
-                }
             }
-            Console.WriteLine($"there are {monthdays} days in {monthname}");
+            else if (monthname == "april" || monthname == "june" || monthname == "september" || monthname == "november")
+            {
+                monthdays = 30;
+            }
+            
+
+
+            Console.WriteLine($"There are {monthdays} days in {monthname}");
             Console.ReadKey();
-                    }
+
+        }
     }
 }
