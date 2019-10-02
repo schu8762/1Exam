@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loops(2)redoHW", "Loops(2)redoHW\Loops(2)redoHW.csproj", "{961C4366-5F60-4368-8C2B-CFE2A7B05CDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{961C4366-5F60-4368-8C2B-CFE2A7B05CDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{961C4366-5F60-4368-8C2B-CFE2A7B05CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{961C4366-5F60-4368-8C2B-CFE2A7B05CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{961C4366-5F60-4368-8C2B-CFE2A7B05CDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E729A349-3A9B-46C8-9D28-F164EF2F8645}
+	EndGlobalSection
+EndGlobal
