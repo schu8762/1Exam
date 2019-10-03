@@ -12,17 +12,17 @@ namespace stringmanipulation
             Console.WriteLine("What word in this sentence do you like the most?");
             string word = Console.ReadLine();
 
-            if (sentence.Contains(word))
+            if (sentence.Contains(word)) //using contains to find the word in the sentence
             {
 
                 Console.WriteLine("What word would you like to change it to?");
                 string changeWord = Console.ReadLine();
-                string newSentence = sentence.Replace(word, changeWord);
+                string newSentence = sentence.Replace(word, changeWord); //creating new sentence using the Replace function to replace the word
                 Console.WriteLine(newSentence);
             }
             else
             {
-                for (int i = word.Length - 1; i >= 0; i--)
+                for (int i = word.Length - 1; i >= 0; i--) // spitting out a word backwards.
                 {
                     Console.Write(word[i]);
                 }
